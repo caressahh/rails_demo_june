@@ -7,7 +7,7 @@ default: &default
 development:
   <<: *default
   database: rails_demo_june_development
-test:
+test: &test
   <<: *default
   database: rails_demo_june_test
 
@@ -16,3 +16,6 @@ production:
   database: rails_demo_june_production
   username: rails_demo_june
   password: <%= ENV['RAILS_DEMO_JUNE_DATABASE_PASSWORD'] %>
+
+cucumber:
+  <<: *test

@@ -18,9 +18,12 @@ gem 'jbuilder', '~> 2.5'
 
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 group :development do
