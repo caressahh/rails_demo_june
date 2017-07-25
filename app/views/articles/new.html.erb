@@ -1,0 +1,17 @@
+<p>New Article</p>
+<% if @article.errors.any? %>
+  <ul>
+    <% @article.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @article, url: articles_path do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    <%= f.submit %>
+<% end %>
+<p></p>

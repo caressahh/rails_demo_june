@@ -5,9 +5,9 @@ Feature: List articles on landing page
 
   Background:
     Given the following articles exist
-    | title                | content                         |
-    | A breaking news item | Some really breaking action     |
-    | Learn Rails 5        | Buils awesome rails application |
+      | title                | content                         |
+      | A breaking news item | Some really breaking action     |
+      | Learn Rails 5        | Buils awesome rails application |
 
   Scenario: Viewing list of articles on application's landing page
     When I am on the landing page
