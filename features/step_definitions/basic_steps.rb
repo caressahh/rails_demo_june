@@ -8,6 +8,3 @@ Given(/^the following articles exist$/) do |table|
   end
 end
 
-Then(/^show me the page$/) do
-  save_and_open_page # Write code here that turns the phrase above into concrete actions
-end

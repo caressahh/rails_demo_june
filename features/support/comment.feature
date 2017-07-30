@@ -1,7 +1,7 @@
 Feature: Comments can be left on an existing article
   As a visitor,
   when I visit the application's landing page,
-  I would like to see a list of articles and be able to leave comments on these articles.
+  I would like to leave comments on articles listed.
 
   Background:
     Given the following articles exist
@@ -11,7 +11,6 @@ Feature: Comments can be left on an existing article
 
   Scenario: Leaving a comment on an existing article
     When I am on the landing page
-    Then I should see a list of articles
     And I should see "Leave a comment"
     When I fill in "comment" with "This is my comment"
     And I click "Send" button
