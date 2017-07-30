@@ -12,7 +12,7 @@ Feature: Comments can be left on an existing article
   Scenario: Leaving a comment on an existing article
     When I am on the landing page
     And I should see "Leave a comment"
-    When I fill in "comment" with "This is my comment"
+    When I fill in "article_message" with "This is my comment"
     And I click "Send" button
     Then I should see "Your comment has been posted"
 

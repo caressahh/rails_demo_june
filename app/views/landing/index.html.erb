@@ -14,6 +14,12 @@
       <%= article.title %><br />
       <%= article.content %><br />
       Written by <%= article.author %> at <%= Date.current.year%>
+      Leave a comment
+      <%= form_for :article do |f| %>
+          <%= f.text_field :email %>
+          <%= f.text_area :message %>
+          <%= f.submit "Send" %>
+      <% end %>
     </li>
   <% end %>
 </ul>

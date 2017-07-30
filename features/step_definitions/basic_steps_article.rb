@@ -12,7 +12,11 @@ When(/^I click "([^"]*)" link$/) do |link_name|
 end
 
 When(/^I fill in "([^"]*)" with "([^"]*)"$/) do |input, value|
-  fill_in(input, :with => value)
+  fill_in(input, :with => value, :match=>:first)
+end
+
+When(/^I fill in field named "([^"]*)" with "([^"]*)"$/) do |input, value|
+  first.("input[name='"+input+"']").set(value)
 end
 
 When(/^I click "([^"]*)" button$/) do |button_name|
