@@ -12,7 +12,8 @@
   <% @articles.each do |article| %>
     <li>
       <%= article.title %><br />
-      <%= article.content %>
+      <%= article.content %><br />
+    Written by <%= article.author %> at <%= article.created_at %>
     </li>
   <% end %>
 </ul>
